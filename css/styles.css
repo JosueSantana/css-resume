@@ -1,0 +1,186 @@
+/* Color Palette
+#404C4A - Outer Space
+#E2F2E1 - Platinum
+#B8D8BA - Light Moss Green
+#AAC0AF - Cambridge blue
+#A777E5 - Lavender (Floral)
+#FCFFF9 - Honeydew
+*/
+
+/* Global styles
+---------------------------*/
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+h1, h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #A777E5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content-wrapper{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow:auto;
+}
+
+.btn{
+  text-decoration: none;
+  background-color: #A777E5;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.download {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Header and Footer
+---------------------------*/
+header, footer {
+  color: #B8D8BA;
+}
+
+/*header*/
+header{
+  padding-top: 50px;
+  position: relative;
+  background: linear-gradient(rgba(64, 76, 74, 0.8), rgba(64, 76, 74, 0.8)),
+  url(../images/banner.jpg) fixed;
+  background-size: cover;
+}
+
+header h1, header h2{
+  color: #E2F2E1;
+  margin: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #AAC0AF;
+}
+
+/*footer*/
+footer {
+  background: #404C4A;
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+nav {
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px 15px;
+}
+
+
+/* Work Experience
+---------------------------*/
+.work {
+  background: linear-gradient(#E2F2E1, #AAC0AF);
+}
+
+h3 ~ p {
+  margin: 0
+}
+
+.job-description p:first-of-type{
+  margin-top: 0;
+}
+
+/* Education
+---------------------------*/
+.education {
+  background: #AAC0AF;
+  color: #404C4A;
+  padding-bottom: 50px;
+}
+
+/* Education
+---------------------------*/
+@media (min-width: 900px){
+  .col-narrow{
+    width: 30%;
+    float: left;
+    min-height: 175px;
+  }
+  .col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 175px;
+  }
+}
+
+@media (max-width: 899px){
+  header{
+    text-align: center;
+  }
+
+  .btn{
+    position: inherit;
+  }
+
+  .avatar{
+    width: 80%;
+  }
+
+  .content-wrapper{
+    padding-top: 200px;
+  }
+
+  nav a {
+    display: block;
+  }
+}
