@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin: 0px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -147,7 +148,7 @@ h3 ~ p {
   padding-bottom: 50px;
 }
 
-/* Education
+/* Media Queries
 ---------------------------*/
 @media (min-width: 900px){
   .col-narrow{
@@ -176,11 +177,17 @@ h3 ~ p {
     width: 80%;
   }
 
-  .content-wrapper{
+  .header-content{
     padding-top: 200px;
   }
 
   nav a {
     display: block;
+  }
+}
+
+@media (max-width: 360px){
+  h1{
+    font-size: 60px;
   }
 }
